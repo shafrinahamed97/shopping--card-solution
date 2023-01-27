@@ -6,4 +6,12 @@ document.getElementById('btn-case-plus').addEventListener('click', function () {
     caseNumberField.value = newCaseNumber;
 
 
+});
+
+document.getElementById('btn-case-minus').addEventListener('click', function () {
+    const caseNumberFiled = document.getElementById('case-number-field');
+    const caseNumberString = caseNumberFiled.value;
+    const previousCaseNumber = parseInt(caseNumberString);
+    const newCaseNumber = previousCaseNumber - 1;
+    caseNumberFiled.value = newCaseNumber;
 })
