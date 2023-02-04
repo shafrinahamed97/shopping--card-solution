@@ -36,6 +36,6 @@ document.getElementById('btn-case-plus').addEventListener('click', function () {
 document.getElementById('btn-case-minus').addEventListener('click', function () {
     const newCaseNumber = updateCaseNumber(false);
 
-    updatePhoneTotalPrice(newCaseNumber);
+    updateCaseTotalPrice(newCaseNumber);
     calculateSubTotal();
 })
